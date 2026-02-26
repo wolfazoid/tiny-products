@@ -28,7 +28,7 @@ Add new ideas as they come. Mark completed ones with ✅ and a link to the publi
 - [ ] A neighborhood resource map that people actually maintain and use
 
 ## Meta / Process
-- [x] The build system itself (Tiny Product #1)
+- [ ] The build system itself (Tiny Product #1)
 - [x] Perspective panel — structured sub-agents for solo builders (Tiny Product #2) → `builds/002-perspective-panel/`
 - [ ] A personal analytics dashboard tracking job search, content performance, and pipeline
 - [ ] A template for how a PM could run a one-week product spike from problem to prototype
