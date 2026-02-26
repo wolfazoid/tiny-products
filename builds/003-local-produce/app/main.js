@@ -15,8 +15,10 @@ Thank you for your time!`;
 // --- State ---
 let map;
 let allStores = [];
+let displayStores = []; // current subset (after search)
 let markers = L.layerGroup();
 let searchMarker = null;
+let activeFilters = new Set(["local", "inferred", "unknown"]);
 
 // --- Map setup ---
 function initMap() {
@@ -156,7 +158,17 @@ function renderStoreList(stores) {
     `;
 
     li.addEventListener("click", () => {
-      map.setView([store.lat, store.lng], 15);
+      if (searchMarker) {
+        // Fit bounds to show both the search pin and the store
+        const searchLatLng = searchMarker.getLatLng();
+        const bounds = L.latLngBounds(
+          [searchLatLng.lat, searchLatLng.lng],
+          [store.lat, store.lng]
+        );
+        map.fitBounds(bounds, { padding: [50, 50], maxZoom: 15 });
+      } else {
+        map.setView([store.lat, store.lng], 15);
+      }
       if (store._marker) store._marker.openPopup();
     });
 
@@ -164,16 +176,58 @@ function renderStoreList(stores) {
   }
 }
 
-function updateStats(stores) {
-  const total = stores.length;
-  const local = stores.filter(
-    (s) => s.classification === "local" || s.classification === "inferred"
-  ).length;
-  const gap = total - local;
+function updateFilterCounts(stores) {
+  const local = stores.filter((s) => s.classification === "local").length;
+  const inferred = stores.filter((s) => s.classification === "inferred").length;
+  const unknown = stores.filter((s) => s.classification === "unknown").length;
 
-  document.getElementById("stat-total").textContent = total;
-  document.getElementById("stat-local").textContent = local;
-  document.getElementById("stat-gap").textContent = gap;
+  document.getElementById("filter-local-count").textContent = local;
+  document.getElementById("filter-inferred-count").textContent = inferred;
+  document.getElementById("filter-unknown-count").textContent = unknown;
+  document.getElementById("store-count").textContent =
+    `${stores.length} grocery stores in Chicago`;
+}
+
+function getFilteredStores(stores) {
+  return stores.filter((s) => activeFilters.has(s.classification));
+}
+
+function applyFilters() {
+  const filtered = getFilteredStores(displayStores);
+  renderMarkers(filtered);
+  renderStoreList(filtered);
+}
+
+let filtersTouched = false;
+
+function toggleFilter(classification) {
+  if (!filtersTouched) {
+    // First click: select ONLY this filter
+    filtersTouched = true;
+    activeFilters.clear();
+    activeFilters.add(classification);
+  } else if (activeFilters.has(classification)) {
+    // Don't allow deselecting the last active filter
+    if (activeFilters.size > 1) {
+      activeFilters.delete(classification);
+    } else {
+      // Clicking the only active filter resets to all
+      activeFilters.add("local");
+      activeFilters.add("inferred");
+      activeFilters.add("unknown");
+      filtersTouched = false;
+    }
+  } else {
+    activeFilters.add(classification);
+  }
+
+  // Update button states
+  document.querySelectorAll(".filter").forEach((btn) => {
+    const f = btn.dataset.filter;
+    btn.classList.toggle("active", activeFilters.has(f));
+  });
+
+  applyFilters();
 }
 
 // --- Search / Geocoding ---
@@ -234,11 +288,10 @@ async function handleSearch() {
   // Sort and filter to nearby stores
   sortByDistance(allStores, loc.lat, loc.lng);
   const nearby = allStores.filter((s) => s.distance <= 10);
-  const display = nearby.length > 0 ? nearby : allStores.slice(0, 50);
+  displayStores = nearby.length > 0 ? nearby : allStores.slice(0, 50);
 
-  renderMarkers(display);
-  renderStoreList(display);
-  updateStats(display);
+  updateFilterCounts(displayStores);
+  applyFilters();
 
   map.setView([loc.lat, loc.lng], 13);
 }
@@ -252,17 +305,22 @@ async function init() {
     if (e.key === "Enter") handleSearch();
   });
 
+  // Wire up filter buttons
+  document.querySelectorAll(".filter").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleFilter(btn.dataset.filter);
+    });
+  });
+
   try {
     allStores = await loadDatabase();
+    displayStores = allStores;
 
     console.log(`Loaded ${allStores.length} stores from db.json`);
-    console.log(`  Local: ${allStores.filter((s) => s.classification === "local").length}`);
-    console.log(`  Inferred: ${allStores.filter((s) => s.classification === "inferred").length}`);
-    console.log(`  Unknown: ${allStores.filter((s) => s.classification === "unknown").length}`);
 
-    renderMarkers(allStores);
-    renderStoreList(allStores);
-    updateStats(allStores);
+    updateFilterCounts(displayStores);
+    applyFilters();
   } catch (err) {
     console.error("Failed to load data:", err);
     document.getElementById("store-list").innerHTML =

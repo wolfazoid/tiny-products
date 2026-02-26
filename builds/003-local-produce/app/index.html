@@ -18,26 +18,21 @@
         <button id="search-btn">Search</button>
       </div>
 
-      <div id="stats">
-        <div class="stat">
-          <span id="stat-total" class="stat-num">—</span>
-          <span class="stat-label">Grocery stores</span>
-        </div>
-        <div class="stat local">
-          <span id="stat-local" class="stat-num">—</span>
-          <span class="stat-label">Stock local</span>
-        </div>
-        <div class="stat gap">
-          <span id="stat-gap" class="stat-num">—</span>
-          <span class="stat-label">Don't / Unknown</span>
-        </div>
+      <div id="filters">
+        <button class="filter active" data-filter="local">
+          <span class="filter-num" id="filter-local-count">—</span>
+          <span class="filter-label">Stocks Local</span>
+        </button>
+        <button class="filter active" data-filter="inferred">
+          <span class="filter-num" id="filter-inferred-count">—</span>
+          <span class="filter-label">Likely Local</span>
+        </button>
+        <button class="filter active" data-filter="unknown">
+          <span class="filter-num" id="filter-unknown-count">—</span>
+          <span class="filter-label">Unknown</span>
+        </button>
       </div>
-
-      <div id="legend">
-        <span class="legend-item"><span class="dot green"></span> Stocks local</span>
-        <span class="legend-item"><span class="dot orange"></span> Likely stocks local</span>
-        <span class="legend-item"><span class="dot gray"></span> Unknown</span>
-      </div>
+      <p id="store-count" class="store-count">—</p>
 
       <ul id="store-list"></ul>
     </aside>

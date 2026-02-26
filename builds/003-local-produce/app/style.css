@@ -71,76 +71,83 @@ h1 {
   background: #1b4332;
 }
 
-/* Stats */
-#stats {
+/* Filters */
+#filters {
   display: flex;
-  gap: 12px;
+  gap: 8px;
 }
 
-.stat {
+.filter {
   flex: 1;
   text-align: center;
-  padding: 12px 8px;
-  background: white;
+  padding: 10px 8px;
   border-radius: 8px;
-  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
 }
 
-.stat.local {
-  border-color: #2d6a4f;
-  background: #f0faf4;
-}
-
-.stat.gap {
-  border-color: #d4a017;
-  background: #fffbeb;
-}
-
-.stat-num {
+.filter-num {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 700;
 }
 
-.stat.local .stat-num {
-  color: #2d6a4f;
-}
-
-.stat.gap .stat-num {
-  color: #b8860b;
-}
-
-.stat-label {
-  font-size: 11px;
-  color: #666;
+.filter-label {
+  font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* Legend */
-#legend {
-  display: flex;
-  gap: 16px;
-  font-size: 12px;
+/* Local filter */
+.filter[data-filter="local"] {
+  background: white;
+  border: 2px solid #e0e0e0;
+  color: #999;
+}
+
+.filter[data-filter="local"].active {
+  background: #f0faf4;
+  border-color: #2d6a4f;
+  color: #2d6a4f;
+}
+
+/* Inferred filter */
+.filter[data-filter="inferred"] {
+  background: white;
+  border: 2px solid #e0e0e0;
+  color: #999;
+}
+
+.filter[data-filter="inferred"].active {
+  background: #fffbeb;
+  border-color: #d4a017;
+  color: #b8860b;
+}
+
+/* Unknown filter */
+.filter[data-filter="unknown"] {
+  background: white;
+  border: 2px solid #e0e0e0;
+  color: #999;
+}
+
+.filter[data-filter="unknown"].active {
+  background: #f5f5f5;
+  border-color: #999;
   color: #666;
 }
 
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.filter:hover {
+  opacity: 0.85;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  display: inline-block;
+/* Store count subtitle */
+.store-count {
+  font-size: 12px;
+  color: #999;
+  margin-top: -8px;
 }
-
-.dot.green { background: #2d6a4f; }
-.dot.orange { background: #d4a017; }
-.dot.gray { background: #999; }
 
 /* Store list */
 #store-list {
