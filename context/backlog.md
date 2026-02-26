@@ -13,6 +13,7 @@ Bugs and improvements to the build system itself. Scan this at the start of each
 - [ ] Consider PM Mentor agent for process coaching (surfaced in Build 002 when Engineer drifted into that role)
 - [ ] Set up Astro + Tailwind when site friction becomes real (at 3-4 posts)
 - [ ] Update CLAUDE.md references from `site/` to `docs/` to match GitHub Pages structure
+- [ ] **Engaged time tracking.** Current time log captures phase transitions but not actual engaged time vs. idle gaps. Ideal: infer engaged time from message density (sum gaps under ~5 min, treat longer gaps as away). Fallback: estimate from conversation flow at clock-out.
 
 ## Done
 

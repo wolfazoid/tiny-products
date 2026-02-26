@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+#sidebar {
+  width: 380px;
+  min-width: 380px;
+  padding: 24px;
+  overflow-y: auto;
+  border-right: 1px solid #e0e0e0;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-top: -8px;
+}
+
+/* Search */
+#search {
+  display: flex;
+  gap: 8px;
+}
+
+#address-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#address-input:focus {
+  outline: none;
+  border-color: #2d6a4f;
+}
+
+#search-btn {
+  padding: 10px 16px;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#search-btn:hover {
+  background: #1b4332;
+}
+
+/* Stats */
+#stats {
+  display: flex;
+  gap: 12px;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.stat.local {
+  border-color: #2d6a4f;
+  background: #f0faf4;
+}
+
+.stat.gap {
+  border-color: #d4a017;
+  background: #fffbeb;
+}
+
+.stat-num {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stat.local .stat-num {
+  color: #2d6a4f;
+}
+
+.stat.gap .stat-num {
+  color: #b8860b;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Legend */
+#legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.green { background: #2d6a4f; }
+.dot.orange { background: #d4a017; }
+.dot.gray { background: #999; }
+
+/* Store list */
+#store-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.store-item {
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.store-item:hover {
+  border-color: #2d6a4f;
+}
+
+.store-item.local {
+  border-left: 3px solid #2d6a4f;
+}
+
+.store-item.inferred {
+  border-left: 3px solid #d4a017;
+}
+
+.store-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.store-address {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+.store-distance {
+  font-size: 11px;
+  color: #999;
+  float: right;
+  margin-top: 2px;
+}
+
+/* Status tags — matches map pin colors */
+.store-tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.store-tag.local {
+  background: #f0faf4;
+  color: #2d6a4f;
+}
+
+.store-tag.inferred {
+  background: #fffbeb;
+  color: #b8860b;
+}
+
+.store-tag.unknown {
+  background: #f0f0f0;
+  color: #666;
+}
+
+/* Action links — always blue, separate line from tags */
+.store-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 6px;
+  align-items: stretch;
+}
+
+a.action-link,
+a.action-link:visited,
+a.action-link:link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid #bfdbfe;
+  transition: background 0.15s;
+}
+
+a.action-link:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* Match icon sizes on action links */
+.popup-actions a,
+a.action-link {
+  font-size: 11px;
+}
+
+/* Map */
+#map {
+  flex: 1;
+}
+
+/* Leaflet popup overrides */
+.leaflet-popup-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.popup-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.popup-address {
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+  align-items: stretch;
+}
+
+.popup-actions a,
+.popup-actions a:visited,
+.popup-actions a:link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 3px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid #bfdbfe;
+  transition: background 0.15s;
+}
+
+.popup-actions a:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}

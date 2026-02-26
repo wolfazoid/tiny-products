@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Produce Finder — Chicago</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h1>Local Produce Finder</h1>
+      <p class="subtitle">Chicago grocery stores — who stocks local?</p>
+
+      <div id="search">
+        <input type="text" id="address-input" placeholder="Enter address or zip code" />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <div id="stats">
+        <div class="stat">
+          <span id="stat-total" class="stat-num">—</span>
+          <span class="stat-label">Grocery stores</span>
+        </div>
+        <div class="stat local">
+          <span id="stat-local" class="stat-num">—</span>
+          <span class="stat-label">Stock local</span>
+        </div>
+        <div class="stat gap">
+          <span id="stat-gap" class="stat-num">—</span>
+          <span class="stat-label">Don't / Unknown</span>
+        </div>
+      </div>
+
+      <div id="legend">
+        <span class="legend-item"><span class="dot green"></span> Stocks local</span>
+        <span class="legend-item"><span class="dot orange"></span> Likely stocks local</span>
+        <span class="legend-item"><span class="dot gray"></span> Unknown</span>
+      </div>
+
+      <ul id="store-list"></ul>
+    </aside>
+
+    <div id="map"></div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
