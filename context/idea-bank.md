@@ -27,6 +27,9 @@ Add new ideas as they come. Mark completed ones with ✅ and a link to the publi
 - [ ] A system for how a local nonprofit could track and report impact without enterprise software
 - [ ] A neighborhood resource map that people actually maintain and use
 
+## Bigger Ideas / Outside Thesis
+- [ ] Work environment simulator — agentic teammates with Trust, Domain Expertise, and conflict dynamics. Simulate team friction, informed/uninformed opinions, and interpersonal dynamics. Potential applications: HR training, team building, conflict management roleplay. Could connect to thesis if scoped to a specific domain (e.g., restaurant manager practicing a difficult scheduling conversation). As-is, it's a different audience and scale than tiny products.
+
 ## Meta / Process
 - [ ] The build system itself (Tiny Product #1)
 - [x] Perspective panel — structured sub-agents for solo builders (Tiny Product #2) → `builds/002-perspective-panel/`

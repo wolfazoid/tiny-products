@@ -52,9 +52,16 @@ Answer: Yes for decisions. No for expression. The system works when agents
 push back on thinking. It fails when agents produce the thinking.
 ```
 
+## Bugs
+
+- **Time tracking is broken.** The build notes template has a time log but there's no mechanism to actually track time. An LLM can't meaningfully estimate duration without writing timestamps to files and recording session start/stop. Needs a real solution — either automated timestamps on phase transitions or a simple clock-in/clock-out command that logs to build notes.
+
+## Future Ideas (from this build)
+
+- Consider adding a "Tone of Voice" section to sub-agent AGENT.md template. Would create more realistic team dynamics and a stronger sense of distinct personalities. Not urgent — everything works now.
+
 ## Time Log
 
 | Session | Duration | What I worked on |
 |---------|----------|-----------------|
-| 1 | start | Scoping complete, beginning agent file creation |
-| | | |
+| 1 | not tracked | Full build end-to-end: scope, build, write, publish |
