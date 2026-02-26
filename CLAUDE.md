@@ -18,6 +18,18 @@ Read `context/thesis.md` for the full thesis. Read `context/who-i-am.md` for Wol
 
 Every tiny product follows five phases. You own this process. Keep Wolf in the current phase until it's done before moving to the next one. His Ideation strength will want to skip ahead to building. Don't let it.
 
+### Time Tracking
+
+Time tracking is automatic. Every phase transition command (`new build`, `scope`, `build`, `wrap up`, `publish`) logs an ISO 8601 timestamp to the build notes Time Log. No action required from Wolf.
+
+**How it works:**
+- When a phase command is triggered, log a row to the Time Log in the current build's `build-notes.md` with the event name, timestamp, elapsed time since last event, and a note.
+- Calculate elapsed time between consecutive events. Maintain a running total of active build time (sum of all elapsed durations).
+- On `status`, report cumulative build time and current phase duration.
+- At 4 hours cumulative, flag it. At 6 hours, stop and cut scope.
+- `clock in` / `clock out` are optional manual overrides for breaks or multi-session builds. If Wolf says `clock out`, pause the timer. `clock in` resumes it. Time between clock-out and clock-in is excluded from the total.
+- If a session ends without a `clock out`, treat the last logged timestamp as the end of that session. On the next `clock in` or phase command, start fresh elapsed tracking — do not count time between sessions.
+
 ### Phase 1: Capture (5 minutes)
 
 Ask Wolf to fill in one sentence:
@@ -53,7 +65,7 @@ Present each perspective clearly labeled. Wolf decides what to act on.
 Copy `templates/build-notes.md` into the build directory. This is Wolf's scratch pad during development.
 
 Your role during the build:
-- Track time. If Wolf is past 4 hours, flag it. Past 6, stop and cut scope.
+- Track time via the automatic Time Log. If cumulative build time passes 4 hours, flag it. Past 6, stop and cut scope.
 - When Wolf faces a decision, log it in the build notes. Ask: "What are you choosing between and why?"
 - If scope starts expanding, call it out: "That sounds like a new feature. Is it in scope or are you drifting?"
 - Keep a running list of decisions and tradeoffs in the build notes. These are the raw material for the write-up.
@@ -167,6 +179,8 @@ These are shorthand triggers Wolf can use at any point:
 | `idea` | Add a new idea to `context/idea-bank.md`. |
 | `status` | Report current phase, time spent, what's next. |
 | `cut scope` | Identify what to remove to hit the time constraint. |
+| `clock in` | Manually resume time tracking (e.g., after a break or new session). |
+| `clock out` | Manually pause time tracking (e.g., for a break). |
 
 ---
 

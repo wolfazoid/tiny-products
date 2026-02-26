@@ -4,7 +4,7 @@ Bugs and improvements to the build system itself. Scan this at the start of each
 
 ## Bugs
 
-- [ ] **Time tracking doesn't work.** The build notes template has a time log but there's no mechanism to track time. An LLM can't estimate duration without timestamps. Need a solution — either automated timestamps on phase transitions or a clock-in/clock-out command that logs to build notes.
+-
 
 ## Improvements
 
@@ -16,4 +16,4 @@ Bugs and improvements to the build system itself. Scan this at the start of each
 
 ## Done
 
--
+- [x] **Time tracking doesn't work.** Fixed — timestamps now log automatically on phase transitions. `clock in`/`clock out` available for breaks.

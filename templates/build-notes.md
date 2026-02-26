@@ -38,9 +38,9 @@ Raw thoughts during the build. Don't filter these — just capture them.
 ```
 
 ## Time Log
-Keep yourself honest about the 4-6 hour constraint.
+Timestamps are logged automatically on phase transitions. Use `clock in` / `clock out` for breaks.
 
-| Session | Duration | What I worked on |
-|---------|----------|-----------------|
-| | | |
-| | | |
+| Event | Timestamp | Elapsed | Note |
+|-------|-----------|---------|------|
+| | | | |
+| | | **Total: —** | |
