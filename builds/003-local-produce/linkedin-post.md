@@ -12,7 +12,8 @@ High quality, publicly available data for where grocers source their food and wh
 
 This tiny product started as a quick proof of concept to make finding locally sourced grocers easier. It's become a fascinating snapshot as to just how hard it is to figure out where our food comes from, and an important question as to how we can make high-quality, sustainably grown food more accessible.
 
-Full write-up and working demo here: https://wolfazoid.github.io/tiny-products/local-produce/
+Try the demo: https://wolfazoid.github.io/tiny-products/local-produce/
+Full write-up: https://github.com/wolfazoid/tiny-products/blob/main/builds/003-local-produce/publish.md
 
 I'd love any and all feedback and ideas on this. What's your first impression of the app? What do you wish was built in here? Would you actually contact a grocer if you knew it would make local food more accessible?
 

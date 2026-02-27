@@ -76,6 +76,8 @@ And of course, this ignores the deeper infrastructure challenges of regenerative
 
 **Live demo:** [Local Produce Finder — Chicago](https://wolfazoid.github.io/tiny-products/local-produce/)
 
+**Full write-up:** [publish.md](https://github.com/wolfazoid/tiny-products/blob/main/builds/003-local-produce/publish.md)
+
 **Source code:** [github.com/wolfazoid/tiny-products/builds/003-local-produce](https://github.com/wolfazoid/tiny-products/tree/main/builds/003-local-produce)
 
 Search by address or zip code to see grocery stores near you. Filter by sourcing status. Click any store to see details — and for stores with unknown sourcing, send a pre-filled email asking about local produce.
