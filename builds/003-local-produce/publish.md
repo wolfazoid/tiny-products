@@ -42,7 +42,11 @@ That means for every store where Jason can confidently find local produce, there
 
 For the "unknown" stores, the tool includes a pre-filled advocacy email — one click to ask a grocer about stocking local and regenerative agriculture products.
 
-[screenshots]
+![Full Chicago map — 10 local, 44 likely local, 318 unknown](screenshots/Screenshot%202026-02-27%20at%203.04.06%20PM.png)
+
+![Zip code search filtered to confirmed local stores](screenshots/Screenshot%202026-02-27%20at%204.58.42%20PM.png)
+
+![Unknown store popup with advocacy email link](screenshots/Screenshot%202026-02-27%20at%204.59.14%20PM.png)
 
 >
 
