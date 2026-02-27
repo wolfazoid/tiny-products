@@ -36,3 +36,4 @@ Add new ideas as they come. Mark completed ones with ✅ and a link to the publi
 - [ ] A personal analytics dashboard tracking job search, content performance, and pipeline
 - [ ] A template for how a PM could run a one-week product spike from problem to prototype
 - [ ] A "decision log" tool for tracking product decisions and their outcomes over time
+- [ ] Claude skills as a corporate standard — shared skill libraries for product teams to manage and distribute learnings across AI agents. How would an org codify tribal knowledge, best practices, and workflow patterns into portable, versionable skills that any team member's agent can invoke?
