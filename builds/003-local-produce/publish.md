@@ -70,7 +70,13 @@ And of course, this ignores the deeper infrastructure challenges of regenerative
 
 ## Try It / See It
 
-Link to the working product, video demo, or instructions for how someone can use or adapt what you built.
+**Live demo:** [Local Produce Finder — Chicago](https://wolfazoid.github.io/tiny-products/local-produce/)
+
+**Source code:** [github.com/wolfazoid/tiny-products/builds/003-local-produce](https://github.com/wolfazoid/tiny-products/tree/main/builds/003-local-produce)
+
+Search by address or zip code to see grocery stores near you. Filter by sourcing status. Click any store to see details — and for stores with unknown sourcing, send a pre-filled email asking about local produce.
+
+The entire app is static HTML/JS with no build step. Fork it, swap the data, point it at your city.
 
 >
 

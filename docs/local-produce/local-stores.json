@@ -1,0 +1,67 @@
+{
+  "confirmed": [
+    {
+      "name": "Dill Pickle Food Co-op",
+      "address": "2746 N Milwaukee Ave, Chicago, IL 60647",
+      "lat": 41.9296,
+      "lng": -87.7163,
+      "source": "NCG Directory",
+      "type": "co-op"
+    },
+    {
+      "name": "Wild Onion Market",
+      "address": "7007 N Clark St, Chicago, IL 60626",
+      "lat": 41.9998,
+      "lng": -87.6723,
+      "source": "NCG Directory",
+      "type": "co-op"
+    },
+    {
+      "name": "Sugar Beet Food Co-op",
+      "address": "812 Madison St, Oak Park, IL 60302",
+      "lat": 41.8804,
+      "lng": -87.7994,
+      "source": "NCG Directory",
+      "type": "co-op"
+    },
+    {
+      "name": "Green Grocer Chicago",
+      "address": "1402 W Grand Ave, Chicago, IL 60642",
+      "lat": 41.8910,
+      "lng": -87.6621,
+      "source": "LocalHarvest",
+      "type": "independent"
+    },
+    {
+      "name": "True Nature Foods",
+      "address": "6034 N Broadway, Chicago, IL 60660",
+      "lat": 41.9903,
+      "lng": -87.6597,
+      "source": "LocalHarvest",
+      "type": "independent"
+    },
+    {
+      "name": "Newleaf Natural Grocery",
+      "address": "1261 Chicago Ave, Evanston, IL 60202",
+      "lat": 42.0473,
+      "lng": -87.6790,
+      "source": "LocalHarvest",
+      "type": "independent"
+    },
+    {
+      "name": "Tinyshop Grocer",
+      "address": "2959 N California Ave, Chicago, IL 60618",
+      "lat": 41.9343,
+      "lng": -87.6975,
+      "source": "Chicago Environmentalists",
+      "type": "independent"
+    }
+  ],
+  "inferred_brands": [
+    "whole foods",
+    "mariano",
+    "pete's fresh market",
+    "tony's fresh market",
+    "trader joe"
+  ]
+}
