@@ -123,4 +123,5 @@ Timestamps are logged automatically on phase transitions. Use `clock in` / `cloc
 | clock out | 2026-02-26T17:15:00Z | ~0:45 | National data landscape research complete |
 | clock in | 2026-02-27T09:00:00Z | — | Session 3 |
 | wrap up | 2026-02-27T09:05:00Z | ~0:05 | Phase 4 start — write-up |
-| | | **Total: ~2:40** | Estimated engaged time (excludes idle gaps) |
+| clock out | 2026-02-27T10:15:00Z | ~1:10 | Write-up, panel reviews, screenshots, LinkedIn post done |
+| | | **Total: ~3:50** | Estimated engaged time (excludes idle gaps) |
