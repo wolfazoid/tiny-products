@@ -6,7 +6,7 @@ You have a 3% chance of getting local, sustainably grown produce when you go to 
 
 10 out of 372 grocery stores in Chicago stock local produce. At least as far as I can tell.
 
-I mapped every grocer I could find in Chicago and tried to identify which ones stocked local, sustainably grown food. "Tried" being the key word.
+I mapped every grocer I could find in Chicago and tried to identify which ones stock good, homegrown, soil-loving, pesticide-free food. "Tried" being the key word.
 
 High quality, publicly available data for where grocers source their food and which stores focus on local & regenerative products doesn't exist. The information lives in blogs, word of mouth, small community advocacy circles powered by the folks who already care. (Meanwhile, Italy laughs as they enjoy hand-made pasta from local grain and daily local markets in their city streets.)
 
