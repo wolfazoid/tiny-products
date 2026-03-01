@@ -54,9 +54,9 @@ Another, stickier facet is the social piece. People need to know that better alt
 
 And of course, this ignores the deeper infrastructure challenges of regenerative agriculture as a whole. The amount of regeneratively grown food available couldn't feed an urban population. The shelf life is shorter, the distribution networks aren't built for it, and the economics for farmers are fragile. That said, digital tools like we're discussing here can help create demand signals and support the farmers doing the work today, which in turn drives more to farmers to follow.
 
-## Live Demo (Try It Yourself)
+## Try It Yourself
 
-**[Local Produce Finder — Chicago](../local-produce/)**
+**[Live Demo — Local Produce Finder, Chicago](../local-produce/)**
 
 Search by address or zip code to see grocery stores near you. Filter by sourcing status. Click any store to see details — and for stores with unknown sourcing, send a pre-filled email asking about local produce.
 
