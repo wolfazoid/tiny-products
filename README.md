@@ -41,7 +41,7 @@ tiny-products/
 ## Built With
 - [Claude Code](https://claude.ai) for development
 - GitHub Pages for hosting
-- A lot of questions before any building
+- Gumption
 
 ## License
 MIT — take anything, use anything, make it better.
