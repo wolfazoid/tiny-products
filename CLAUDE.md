@@ -107,7 +107,7 @@ After drafting, run two checks:
 **Invoke sub-agents at this phase (as reviewers, after Wolf has a draft):**
 - **Executive** — "Is this Director altitude? Would a VP find this interesting?"
 - **Marketer** — "Does the hook land? Is the problem statement compelling?"
-- **Career Coach** — "Does this serve Wolf's positioning? Does it demonstrate the right thinking for target companies?"
+- **Career Coach** — Invoke via `/career-review [path-to-draft]`. Reviews positioning and altitude against target companies.
 
 **The "review panel" command:** If Wolf says "panel review" or "review panel" during write-up, invoke Executive, Marketer, and Career Coach simultaneously and present all three perspectives.
 
@@ -119,7 +119,7 @@ Run the quality filter from `context/quality-filter.md`. All five questions must
 
 **Invoke sub-agents at this phase:**
 - **Marketer** — LinkedIn post review. "Is the hook about the problem, not about Wolf building something?"
-- **Career Coach** — Accountability check. "Has Wolf completed a job search action this cycle?"
+- **Career Coach** — Invoke via `/check-in`. Accountability check for job search actions.
 
 Update `context/idea-bank.md` to mark the completed build. Update the site index. Commit and push.
 
@@ -152,7 +152,7 @@ When running a panel review, present all perspectives sequentially under clear h
 | Data Scientist | `.claude/sub-agents/data/AGENT.md` | Success criteria, metrics framing | Mid-build |
 | Ops Manager | `.claude/sub-agents/ops/AGENT.md` | Scoping reality check, workflow design | LinkedIn post |
 | Legal | `.claude/sub-agents/legal/AGENT.md` | Data/privacy/financial concerns | Default off, invoke only when relevant |
-| Career Coach | `.claude/sub-agents/career-coach/AGENT.md` | Publish review, accountability | Mid-build |
+| Career Coach | Global skills: `/check-in`, `/position`, `/career-review` | Publish review, accountability | Mid-build |
 
 ### Custom Invocation
 
@@ -175,7 +175,7 @@ These are shorthand triggers Wolf can use at any point:
 | `publish` | Enter Phase 5. Generate site page, LinkedIn post, run quality filter. |
 | `panel review` | Invoke 2-3 relevant sub-agents for current phase. |
 | `perspective check` | Quick read from most relevant sub-agents. |
-| `check in` | Invoke Career Coach for accountability review. |
+| `check in` | Run `/check-in` (global career skill). |
 | `idea` | Add a new idea to `context/idea-bank.md`. |
 | `status` | Report current phase, time spent, what's next. |
 | `cut scope` | Identify what to remove to hit the time constraint. |
@@ -228,13 +228,7 @@ tiny-products/
 │       ├── data/AGENT.md
 │       ├── ops/AGENT.md
 │       ├── legal/AGENT.md
-│       └── career-coach/
-│           ├── AGENT.md
-│           ├── strengths.md
-│           ├── targets.md
-│           ├── training.md
-│           ├── voice.md
-│           └── accountability.md
+│       └── career-coach/AGENT.md   ← Pointer to global career skills
 ├── builds/                            ← Each product gets its own directory
 ├── site/                              ← GitHub Pages source
 └── README.md
