@@ -15,7 +15,7 @@ more digital world?
 
 <div class="product" markdown="1">
 <div class="product-date">March 2026</div>
-<div class="product-title"><a href="{{ 'posts/the-leverage-window' | relative_url }}">Learn how to build your system before the system defines you</a></div>
+<div class="product-title"><a href="{{ 'posts/the-leverage-window' | relative_url }}">Build your system before the system defines you</a></div>
 <span class="product-tag">agentic-systems</span>
 <p class="product-desc">
 (Or, teach yourself to fish, it's a really big ocean)
@@ -24,7 +24,7 @@ more digital world?
 
 <div class="product" markdown="1">
 <div class="product-date">February 2026</div>
-<div class="product-title"><a href="{{ 'local-produce/write-up' | relative_url }}">Nobody Knows Where the Local Food Is</a></div>
+<div class="product-title"><a href="{{ 'local-produce/write-up' | relative_url }}">An Easier Way To Find Local Food</a></div>
 <span class="product-tag">food-systems</span>
 <p class="product-desc">
 A map and advocacy tool for local produce in Chicago.

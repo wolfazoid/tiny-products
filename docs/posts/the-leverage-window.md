@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Learn how to build your system before the system defines you"
-subtitle: "(Or, teach yourself to fish, it's a really big ocean)"
+title: "Build your system before the system defines you"
+subtitle: "Learning how to create your own agentic systems now will pay dividends in the coming years. Companies that strike the right balance of structure and freedom to explore will see the highest employee satisfaction and the greatest rewards."
 date: 2026-03-01
 tags: [agentic-systems]
 ---

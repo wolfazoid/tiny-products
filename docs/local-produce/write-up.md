@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nobody Knows Where the Local Food Is"
+title: "An Easier Way To Find Local Food"
 subtitle: "A map and advocacy tool for local produce in Chicago."
 date: 2026-02-27
 tags: [food-systems]
