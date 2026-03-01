@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nobody Knows Where the Local Food Is"
-subtitle: "A map of 372 Chicago grocery stores labeled by local sourcing status — and an advocacy tool for the 318 that don't (or won't say)."
+subtitle: "A map and advocacy tool for local produce in Chicago."
 date: 2026-02-27
 tags: [food-systems]
 ---
