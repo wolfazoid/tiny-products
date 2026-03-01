@@ -1,0 +1,5 @@
+title: Tiny Products
+baseurl: /tiny-products
+url: https://wolfazoid.github.io
+markdown: kramdown
+exclude: ["README.md"]

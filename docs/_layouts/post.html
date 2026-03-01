@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}" />
+  </head>
+  <body>
+    <div class="back"><a href="{{ '/' | relative_url }}">&larr; All projects</a></div>
+
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <div class="subtitle">{{ page.subtitle }}</div>
+    {% endif %}
+
+    {{ content }}
+
+    <div class="footer">
+      <p>
+        This is part of an ongoing series exploring how technology can give real
+        people more control over the things that matter to them — their food,
+        their business, their community.
+        <a href="{{ '/' | relative_url }}">See all projects &rarr;</a>
+      </p>
+      <p>
+        Built with Claude Code.
+        <a href="https://github.com/wolfazoid/tiny-products">Source on GitHub</a>.
+      </p>
+    </div>
+  </body>
+</html>
