@@ -6,6 +6,8 @@ date: 2026-02-27
 tags: [food-systems]
 ---
 
+**[Live Demo — Local Produce Finder, Chicago](../local-produce/)**
+
 ## The Problem
 
 Jason cooks 3 nights a week and wants to buy local, sustainably grown food — but "Fresh Farms" does not a local store make. His nearest supermarket's sourcing is opaque, the organic label is dubious, and his farmer's market is only open when he's working. He's searched online for local-friendly grocers, but there's no reliable way to tell who actually stocks local produce, who's just marketing well, and who to contact to ask for better options.
@@ -52,9 +54,9 @@ Another, stickier facet is the social piece. People need to know that better alt
 
 And of course, this ignores the deeper infrastructure challenges of regenerative agriculture as a whole. The amount of regeneratively grown food available couldn't feed an urban population. The shelf life is shorter, the distribution networks aren't built for it, and the economics for farmers are fragile. That said, digital tools like we're discussing here can help create demand signals and support the farmers doing the work today, which in turn drives more to farmers to follow.
 
-## Try It
+## Live Demo (Try It Yourself)
 
-**[Live demo — Local Produce Finder, Chicago](../local-produce/)**
+**[Local Produce Finder — Chicago](../local-produce/)**
 
 Search by address or zip code to see grocery stores near you. Filter by sourcing status. Click any store to see details — and for stores with unknown sourcing, send a pre-filled email asking about local produce.
 

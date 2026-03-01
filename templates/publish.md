@@ -16,6 +16,8 @@ Clear and descriptive. Not clever for clever's sake.
 
 >
 
+**[Live Demo — link to demo]()**
+
 ## The Problem (2-4 sentences)
 Who has this problem? Why does it exist? What does the current state look like? Ground it in a real person — even if that person is you.
 
@@ -41,7 +43,7 @@ Honest reflection. What worked, what didn't, what questions this raised. Be spec
 
 >
 
-## Try It / See It
+## Live Demo (Try It Yourself)
 Link to the working product, video demo, or instructions for how someone can use or adapt what you built.
 
 >
