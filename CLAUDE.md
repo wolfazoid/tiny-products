@@ -203,6 +203,19 @@ These are shorthand triggers Wolf can use at any point:
 
 ---
 
+## Site Structure
+
+The site is Jekyll on GitHub Pages, served from `docs/`. Two types of content:
+
+- **Build write-ups** live at `docs/{build-slug}/write-up.md`. Each build directory may also contain a live demo (`index.html`) and screenshots.
+- **Standalone posts** (thought leadership, essays) live at `docs/posts/{slug}.md`. No build, no demo — just writing.
+
+Both use `layout: post` frontmatter. The index (`docs/index.md`) lists all content newest-first. Build entries include demo + write-up links. Post entries link directly to the post.
+
+New post = create a `.md` file with frontmatter, add an entry to the index, push.
+
+---
+
 ## Project Structure
 
 ```
@@ -230,6 +243,11 @@ tiny-products/
 │       ├── legal/AGENT.md
 │       └── career-coach/AGENT.md   ← Pointer to global career skills
 ├── builds/                            ← Each product gets its own directory
-├── site/                              ← GitHub Pages source
+├── docs/                              ← GitHub Pages source (Jekyll)
+│   ├── _layouts/                      ← default.html, post.html
+│   ├── assets/style.css               ← Shared site styles
+│   ├── posts/                         ← Standalone writing (not tied to a build)
+│   ├── {build-slug}/write-up.md       ← Build write-ups live here
+│   └── index.md                       ← Landing page
 └── README.md
 ```
