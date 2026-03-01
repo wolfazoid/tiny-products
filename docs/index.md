@@ -14,6 +14,15 @@ more digital world?
 </div>
 
 <div class="product" markdown="1">
+<div class="product-date">March 2026</div>
+<div class="product-title"><a href="{{ 'posts/the-leverage-window' | relative_url }}">The Leverage Window</a></div>
+<span class="product-tag">agentic-systems</span>
+<p class="product-desc">
+The wild west era of agentic systems won't last. The people who invest now will have a ton of leverage. The people who wait for their employer to hand them a workflow will be playing catch-up.
+</p>
+</div>
+
+<div class="product" markdown="1">
 <div class="product-date">February 2026</div>
 <div class="product-title"><a href="{{ 'local-produce/write-up' | relative_url }}">Nobody Knows Where the Local Food Is</a></div>
 <span class="product-tag">food-systems</span>
