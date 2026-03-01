@@ -27,7 +27,7 @@ A map of 372 Chicago grocery stores labeled by whether they stock local produce 
 
 <div class="product" markdown="1">
 <div class="product-date">February 2026</div>
-<div class="product-title"><a href="{{ 'perspective-panel/' | relative_url }}">Think To Build – Where Agentic Teams Shine, And Where They Fall Apart</a></div>
+<div class="product-title"><a href="{{ 'perspective-panel/write-up' | relative_url }}">Think To Build – Where Agentic Teams Shine, And Where They Fall Apart</a></div>
 <span class="product-tag">meta</span>
 <p class="product-desc">
 Structured AI perspectives for solo builders — and the line between
