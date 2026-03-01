@@ -212,7 +212,7 @@ The site is Jekyll on GitHub Pages, served from `docs/`. Two types of content:
 
 Both use `layout: post` frontmatter. The index (`docs/index.md`) lists all content newest-first. Build entries include demo + write-up links. Post entries link directly to the post.
 
-**Index entries must use the post's `title` as the link text and `subtitle` as the description.** Do not write custom descriptions — pull them from the post frontmatter.
+**Index entries must use the post's `title` as the link text and `subtitle` as the description.** Do not write custom descriptions — pull them from the post frontmatter. Build entries include a demo link if available, or a repo link if not. Standalone posts don't need either.
 
 New post = create a `.md` file with frontmatter, add an entry to the index, push.
 

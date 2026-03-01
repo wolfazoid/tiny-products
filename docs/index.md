@@ -30,15 +30,18 @@ more digital world?
 A map and advocacy tool for local produce in Chicago.
 </p>
 <p class="product-desc">
-<a href="{{ 'local-produce/' | relative_url }}">Live demo</a> · <a href="{{ 'local-produce/write-up' | relative_url }}">Write-up</a>
+<a href="{{ 'local-produce/' | relative_url }}">Live demo</a>
 </p>
 </div>
 
 <div class="product" markdown="1">
 <div class="product-date">February 2026</div>
 <div class="product-title"><a href="{{ 'perspective-panel/write-up' | relative_url }}">Think To Build – Where Agentic Teams Shine, And Where They Fall Apart</a></div>
-<span class="product-tag">meta</span>
+<span class="product-tag">agentic-systems</span>
 <p class="product-desc">
 Simulating a team agentically and the line between thinking with AI and letting AI think for you.
+</p>
+<p class="product-desc">
+<a href="https://github.com/wolfazoid/tiny-products">Repo</a>
 </p>
 </div>
