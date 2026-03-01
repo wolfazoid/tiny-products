@@ -28,11 +28,11 @@ That means for every store where Jason can confidently find local produce, there
 
 For the "unknown" stores, the tool includes a pre-filled advocacy email — one click to ask a grocer about stocking local and regenerative agriculture products.
 
-![Full Chicago map — 10 local, 44 likely local, 318 unknown](screenshots/Screenshot%202026-02-27%20at%203.04.06%20PM.png)
+![Full Chicago map — 10 local, 44 likely local, 318 unknown](screenshots/map-full.png)
 
-![Zip code search filtered to confirmed local stores](screenshots/Screenshot%202026-02-27%20at%204.58.42%20PM.png)
+![Zip code search filtered to confirmed local stores](screenshots/search-local.png)
 
-![Unknown store popup with advocacy email link](screenshots/Screenshot%202026-02-27%20at%204.59.14%20PM.png)
+![Unknown store popup with advocacy email link](screenshots/advocacy-email.png)
 
 ## Decisions & Tradeoffs
 
@@ -58,4 +58,4 @@ And of course, this ignores the deeper infrastructure challenges of regenerative
 
 Search by address or zip code to see grocery stores near you. Filter by sourcing status. Click any store to see details — and for stores with unknown sourcing, send a pre-filled email asking about local produce.
 
-The entire app is static HTML/JS with no build step. [Fork it](https://github.com/wolfazoid/tiny-products), swap the data, point it at your city.
+[Fork it](https://github.com/wolfazoid/tiny-products) and try it out yourself.
